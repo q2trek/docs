@@ -9,8 +9,8 @@ still connect and play.
 These documents are for server operators who want to run a server above 10 Hz,
 and for developers who want to know what the forks change and why.
 
-**The documents are written in Russian.** Code references have the form
-`path:line@key`; the keys and the revisions they point to are in
+The documents are written in Russian. Code references have the form
+`path:line@key`. The keys and the revisions they point to are in
 [REVISIONS.md](REVISIONS.md).
 
 ## Repositories
@@ -47,7 +47,7 @@ Use the `master` branch of the three forks (the default on GitHub). The
   don't ask for a rate: Q2PRO built without that option and protocol 34/35
   clients. Any client that sends the same exact-timeline setting gets the full
   rate.
-- The engine needs the `variable-fps` meson option; OpenFFA needs
-  `make CONFIG_VARIABLE_SERVER_FPS=y`; OpenTDM supports it in every build.
-- `sv_fps` takes effect at the next `map`; it is published in serverinfo.
+- The engine needs the `variable-fps` meson option, and OpenFFA needs
+  `make CONFIG_VARIABLE_SERVER_FPS=y`. OpenTDM supports it in every build.
+- `sv_fps` takes effect at the next `map` and is published in serverinfo.
 - Demos and MVD stay at 10 Hz.
